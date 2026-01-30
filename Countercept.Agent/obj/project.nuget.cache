@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "dgSpecHash": "L0wSycelgMs=",
+  "success": false,
+  "projectFilePath": "/home/mike/projects/countercept-etw/Countercept.Agent/Countercept.Agent.csproj",
+  "expectedPackageFiles": [
+    "/home/mike/.nuget/packages/google.protobuf/3.33.5/google.protobuf.3.33.5.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.diagnostics.netcore.client/0.2.510501/microsoft.diagnostics.netcore.client.0.2.510501.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.diagnostics.tracing.traceevent/3.1.29/microsoft.diagnostics.tracing.traceevent.3.1.29.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.configuration/10.0.1/microsoft.extensions.configuration.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.configuration.abstractions/10.0.1/microsoft.extensions.configuration.abstractions.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.configuration.binder/10.0.1/microsoft.extensions.configuration.binder.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.configuration.commandline/10.0.1/microsoft.extensions.configuration.commandline.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.configuration.environmentvariables/10.0.1/microsoft.extensions.configuration.environmentvariables.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.configuration.fileextensions/10.0.1/microsoft.extensions.configuration.fileextensions.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.configuration.json/10.0.1/microsoft.extensions.configuration.json.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.configuration.usersecrets/10.0.1/microsoft.extensions.configuration.usersecrets.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.dependencyinjection/10.0.2/microsoft.extensions.dependencyinjection.10.0.2.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.2/microsoft.extensions.dependencyinjection.abstractions.10.0.2.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.diagnostics/10.0.1/microsoft.extensions.diagnostics.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.diagnostics.abstractions/10.0.1/microsoft.extensions.diagnostics.abstractions.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.fileproviders.abstractions/10.0.1/microsoft.extensions.fileproviders.abstractions.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.fileproviders.physical/10.0.1/microsoft.extensions.fileproviders.physical.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.filesystemglobbing/10.0.1/microsoft.extensions.filesystemglobbing.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.hosting/10.0.1/microsoft.extensions.hosting.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.hosting.abstractions/10.0.1/microsoft.extensions.hosting.abstractions.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.hosting.windowsservices/10.0.2/microsoft.extensions.hosting.windowsservices.10.0.2.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.logging/10.0.2/microsoft.extensions.logging.10.0.2.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.2/microsoft.extensions.logging.abstractions.10.0.2.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.logging.configuration/10.0.1/microsoft.extensions.logging.configuration.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.logging.console/10.0.1/microsoft.extensions.logging.console.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.logging.debug/10.0.1/microsoft.extensions.logging.debug.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.logging.eventlog/10.0.2/microsoft.extensions.logging.eventlog.10.0.2.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.logging.eventsource/10.0.1/microsoft.extensions.logging.eventsource.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.options/10.0.2/microsoft.extensions.options.10.0.2.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.options.configurationextensions/10.0.1/microsoft.extensions.options.configurationextensions.10.0.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.primitives/10.0.2/microsoft.extensions.primitives.10.0.2.nupkg.sha512",
+    "/home/mike/.nuget/packages/rabbitmq.client/7.2.0/rabbitmq.client.7.2.0.nupkg.sha512",
+    "/home/mike/.nuget/packages/system.diagnostics.eventlog/10.0.2/system.diagnostics.eventlog.10.0.2.nupkg.sha512",
+    "/home/mike/.nuget/packages/system.reflection.typeextensions/4.7.0/system.reflection.typeextensions.4.7.0.nupkg.sha512",
+    "/home/mike/.nuget/packages/system.serviceprocess.servicecontroller/10.0.2/system.serviceprocess.servicecontroller.10.0.2.nupkg.sha512",
+    "/home/mike/.nuget/packages/system.threading.ratelimiting/8.0.0/system.threading.ratelimiting.8.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.Extensions.Hosting from 10.0.2 to 10.0.1. Reference the package directly from the project to select a different version. \n Countercept.Agent -> Microsoft.Extensions.Hosting.WindowsServices 10.0.2 -> Microsoft.Extensions.Hosting (>= 10.0.2) \n Countercept.Agent -> Microsoft.Extensions.Hosting (>= 10.0.1)",
+      "projectPath": "/home/mike/projects/countercept-etw/Countercept.Agent/Countercept.Agent.csproj",
+      "filePath": "/home/mike/projects/countercept-etw/Countercept.Agent/Countercept.Agent.csproj",
+      "libraryId": "Microsoft.Extensions.Hosting",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
