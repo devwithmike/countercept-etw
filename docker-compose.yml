@@ -53,4 +53,4 @@ services:
         condition: service_healthy
     environment:
       - RABBITMQ_HOST=rabbitmq
-      - ELASTICSEARCH_HOST=elasticsearch
+      - ELASTICSEARCH_HOST=http://elasticsearch:9200
