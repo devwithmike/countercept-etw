@@ -33,6 +33,7 @@ logger = logging.getLogger(__name__)
 class TelemetryIngestor:
     def __init__(self):
         self.buffer = []
+        self.last_flush_time = time.time()
         logger.info(f"Connecting to ElasticSearch at {ELASTIC_HOST}...")
 
         # For v8 client to talk to an unsecured v8 server:

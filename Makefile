@@ -6,15 +6,19 @@ SERVICE_DIR := ./Countercept.Agent
 
 up:
 	@echo "Starting Docker containers..."
-	docker-compose -f $(COMPOSE_FILE) up -d
+	docker compose -f $(COMPOSE_FILE) up -d
 
 publish:
 	@echo "Publish the Countercept Agent..."
-	dotnet publish $(SERVICE_DIR)/Countercept.Agent.csproj -c Release -o $(SERVICE_DIR) -r win-x64 --self-contained
+	rm -rf ./publish-agent
+	dotnet publish $(SERVICE_DIR)/Countercept.Agent.csproj -c Release -o ./$(SERVICE_DIR)/publish-agent -r win-x64 --self-contained
+	cp $(SERVICE_DIR)/install.ps1 ./$(SERVICE_DIR)/publish-agent/install.ps1
+	zip -r ./CounterceptAgent_v1.zip ./$(SERVICE_DIR)/publish-agent/*
+	@echo "Package ready: CounterceptAgent_v1.zip"
 
 down:
 	@echo "Stopping Docker containers..."
-	docker-compose -f $(COMPOSE_FILE) down
+	docker compose -f $(COMPOSE_FILE) down
 
 # Help command to list available options
 help:
