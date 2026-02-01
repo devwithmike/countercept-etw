@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package countercept;
+
+option csharp_namespace = "Countercept.Shared.Protobuf";
+
+import "google/protobuf/timestamp.proto";
+
+message EtwEvent {
+
+  // Unique ID for the event instance
+  string event_uuid = 1;
+
+  // The precise time the event occurred on the host
+  google.protobuf.Timestamp timestamp = 2;
+
+  // The name of the host (e.g., "WIN-WORKSTATION-01")
+  string machine_name = 3;
+
+  // The ETW Provider (e.g., "Microsoft-Windows-Kernel-Process")
+  string provider_name = 4;
+
+  // The specific Event ID (e.g., 1 for Process Start)
+  uint32 event_id = 5;
+
+  // Contextual IDs
+  uint32 process_id = 6;
+  uint32 thread_id = 7;
+
+  // The opcode name (e.g., "Info", "Start", "Stop")
+  string task_name = 8;
+  string opcode_name = 9;
+
+  // --- Dynamic Payload Data ---
+  map<string, string> payload = 10;
+}
