@@ -7,12 +7,14 @@
     <UserSecretsId>dotnet-Countercept.Agent-457826dc-42dd-4388-9c27-dd74099c0d33</UserSecretsId>
     <OutputType>exe</OutputType>
     <PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <!-- <RuntimeIdentifier>win-x64</RuntimeIdentifier> -->
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.33.5" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.2" />
     <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="10.0.2" />
+    <PackageReference Include="RabbitMQ.Client" Version="7.2.0" />
   </ItemGroup>
 </Project>
